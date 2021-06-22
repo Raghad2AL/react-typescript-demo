@@ -1,24 +1,15 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ButtonBoot from './components/BootButton/button';
+import ButtonMUI from './components/MUIButton/Button';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="d-flex justify-content-between">
+      <ButtonMUI label='Click me!' size='lg'/>
+      <ButtonBoot label='Click me!' size='lg'/>
     </div>
   );
 }
